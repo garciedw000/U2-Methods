@@ -3,23 +3,25 @@ import javax.swing.*;
 public class ParameterExample {
 
     public static void main(String[] args) {
-        area();
-        perimeter();
+
+        //double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
+        //double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
+        double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
+        double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width"));
+
     }
 
-    public static void area(){
-        double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
-        double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
+
+    public static void areaRect(double width, double length) {
 
         double area = width * length;
         JOptionPane.showMessageDialog(null, "The area is " + area);
     }
 
-    public static void perimeter(){
-        double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
-        double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
+    public static void perimeterRect(double width, double length) {
 
-        double perimeter = 2 * width + 2 *  length;
-        JOptionPane.showMessageDialog(null, "The area is " + perimeter);
+        double perimeterRect = (2 * width) + (2 *length);
+        JOptionPane.showMessageDialog(null, "The area is " + perimeterRect);
     }
+
 }
