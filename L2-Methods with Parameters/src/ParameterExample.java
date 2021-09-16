@@ -9,6 +9,8 @@ public class ParameterExample {
         double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
         double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width"));
 
+        areaRect(width, length);
+        perimeterRect(width, length);
     }
 
 
